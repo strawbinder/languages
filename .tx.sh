@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 # Script to exchange translation files between repo and Transifex via Travis CI.
 # It relies on $TXTOKEN and $GHTOKEN being set as env vars for the given repo
 # in Travis CI.
