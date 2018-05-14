@@ -1,5 +1,4 @@
 language: python
-sudo: required
 
 env:
   global:
@@ -15,6 +14,6 @@ script:
   
 after_success:
   - echo "Success"
-    ./deploy.sh
+  - ./deploy.sh
   - echo "Success 2"
     
