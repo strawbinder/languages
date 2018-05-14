@@ -13,7 +13,7 @@ script:
   - echo "Run something"
   
 after_success:
-  - echo "Success"
+  - echo "$TRAVIS_BRANCH"
   - test $TRAVIS_BRANCH = "develop" &&
     ./tx.sh push
   - echo "Success 2"
