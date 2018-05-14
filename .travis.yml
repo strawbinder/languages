@@ -17,5 +17,4 @@ after_success:
   - chmod +x ./.tx.sh
   - test $TRAVIS_BRANCH = $TX_BRANCH &&
     ./.tx.sh push
-  - test "${"$TRAVIS_TAG"#*"$TX_TAG"}" != "$TRAVIS_TAG" &&
-    ./.tx.sh pull
+  - ./.tx.sh pull
