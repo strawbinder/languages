@@ -17,6 +17,6 @@ after_success:
   - chmod +x ./.tx.sh
   - test $TRAVIS_BRANCH = $TX_BRANCH &&
     ./.tx.sh push
-  - tags = true &&
+  - test tags = true &&
     ./.tx.sh pull
   - echo "Success"
