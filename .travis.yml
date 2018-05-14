@@ -18,6 +18,7 @@ script:
   - echo "Run something"
   
 deploy:
+  skip_cleanup: true
   # Push source file for translations on builds on $TX_BRANCH
   - provider: script
     script: ./tx.sh push
