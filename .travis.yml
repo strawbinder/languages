@@ -8,14 +8,16 @@ env:
     - TX_COMMIT_TRANSLATIONS=true
 
 install:
-  - pip install virtualenv
-  - virtualenv ~/env
-  - source ~/env/bin/activate
   - pip install transifex-client
-
+  
 script:
   - echo "Run something"
   
 after_success:
   - echo "Success"
- 
+  - provider: script
+    script: ./tx.sh push
+    on:
+      branch: $TX_BRANCH
+  - echo "Success 2"
+    
