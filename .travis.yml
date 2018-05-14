@@ -1,5 +1,4 @@
-#language: python
-language: generic # no-frills build
+language: python
 
 env:
   global:
@@ -12,9 +11,9 @@ install:
 
 script:
   - echo "Run something"
-  - echo "$PWD"
-
+  
 deploy:
+  - language: generic # no-frills build
   # Push source file for translations on builds on $TX_BRANCH
   - provider: script
     script: ./tx.sh push
