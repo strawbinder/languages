@@ -22,4 +22,4 @@ after_success:
   - echo "Success"
   - STR="My string"
   - [[ $STR =~ .*My.* ]] &&
-    echo "It's there!"
+    echo "It's there!!!!!"
