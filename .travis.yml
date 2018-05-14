@@ -2,7 +2,7 @@ language: python
 
 env:
   global:
-    - TX_BRANCH="develop"
+    - TX_BRANCH="devel"
     - TX_TAG="txpull"
     - TX_COMMIT_TRANSLATIONS=true
 
