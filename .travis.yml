@@ -19,7 +19,8 @@ script:
 deploy:
   # Push source file for translations on builds on $TX_BRANCH
   - provider: script
-    script: chmod +x ./tx.sh push
+    script: chmod +x ./tx.sh && ./tx.sh push
+    clean_up: false
     on:
       branch: $TX_BRANCH
 
@@ -27,7 +28,7 @@ deploy:
   # It may also commit and push the changes back to Github if the env var
   # $TX_COMMIT_TRANSLATIONS is set to true.
   - provider: script
-    script: chmod +x ./tx.sh pull
+    script: chmod +x ./tx.sh && ./tx.sh pull
     clean_up: false
     on:
       tags: true
