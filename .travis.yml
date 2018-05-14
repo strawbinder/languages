@@ -11,6 +11,7 @@ install:
 
 script:
   - echo "Run something"
+  - echo "$PWD"
 
 deploy:
   # Push source file for translations on builds on $TX_BRANCH
