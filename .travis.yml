@@ -13,4 +13,4 @@ script:
   - echo "Run something"
   - echo "$PWD"
 
-after_success: chmod +x ./deploy.sh
+after_success: chmod +x ./deploy.sh && ./deploy.sh
