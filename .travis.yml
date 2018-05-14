@@ -1,5 +1,9 @@
 language: python
 
+addons:
+  apt:
+    update: true
+    
 env:
   global:
     - TX_BRANCH="develop"
