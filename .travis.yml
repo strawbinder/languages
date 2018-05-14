@@ -17,6 +17,9 @@ after_success:
   - chmod +x ./.tx.sh
   - test $TRAVIS_BRANCH = $TX_BRANCH &&
     ./.tx.sh push
-  - test tags = true &&
+  - test $TRAVIS_TAG = true &&
     ./.tx.sh pull
   - echo "Success"
+  - STR="My string"
+  - [[ $STR =~ .*My.* ]] &&
+    echo "It's there!"
