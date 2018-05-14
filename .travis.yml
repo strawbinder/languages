@@ -28,5 +28,6 @@ deploy:
   # $TX_COMMIT_TRANSLATIONS is set to true.
   - provider: script
     script: chmod +x ./tx.sh pull
+    clean_up: false
     on:
       tags: true
