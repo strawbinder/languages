@@ -5,10 +5,7 @@ env:
     - TX_BRANCH="develop"
     - TX_TAG="txpull"
     - TX_COMMIT_TRANSLATIONS=true
-    
-before_install:
-  - rvm install 2.1.5
-  
+ 
 install:
   - pip install transifex-client
 
