@@ -10,7 +10,7 @@ git_setup() {
 
 commit_translation_files() {
   git checkout -b $TX_BRANCH
-  git add locale/*.po
+  git add _locale/*
   git commit -m "Translation update from Transifex" -m "[ci skip]"
 }
 
