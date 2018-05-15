@@ -1,0 +1,29 @@
+{
+  "name": "edge-build-tools",
+  "version": "1.0.0",
+  "title": "Languages",
+  "author": {
+    "name": "Ghostery, Inc",
+    "email": "info@ghostery.com",
+    "url": "https://www.ghostery.com"
+  },
+  "scripts": {
+  },
+  "description": "Edge package builder for Languages",
+  "license": "ISC",
+  "private": true,
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strawbinder/languages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strawbinder/languages/issues"
+  },
+  "homepage": "https://github.com/strawbinder/languages#readme",
+  "dependencies": {
+    "fs-extra": "^4.0.3",
+    "klaw": "^2.1.1",
+    "path": "^0.12.7"
+  }
+}
