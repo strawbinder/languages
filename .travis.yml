@@ -1,4 +1,7 @@
-language: python
+language: node_js
+node_js:
+  - "9"
+sudo: false
 
 env:
   global:
@@ -13,8 +16,7 @@ script:
   - echo "Run something"
   
 after_success:
-#  - echo $TRAVIS_BRANCH
   - chmod +x ./.tx.sh
-#  - test $TRAVIS_BRANCH = $TX_BRANCH &&
-#    ./.tx.sh push
-  - ./.tx.sh pull
+  - test $TRAVIS_BRANCH = $TX_BRANCH &&
+    ./.tx.sh push
+  #- ./.tx.sh pull
