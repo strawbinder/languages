@@ -14,7 +14,7 @@ script:
   
 after_success:
 #  - echo $TRAVIS_BRANCH
-#  - chmod +x ./.tx.sh
-  - test $TRAVIS_BRANCH = $TX_BRANCH &&
-    ./.tx.sh push
+  - chmod +x ./.tx.sh
+#  - test $TRAVIS_BRANCH = $TX_BRANCH &&
+#    ./.tx.sh push
   - ./.tx.sh pull
