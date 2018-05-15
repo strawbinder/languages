@@ -8,7 +8,10 @@ env:
     - TX_BRANCH="develop"
     - TX_TAG="txpull"
     - TX_COMMIT_TRANSLATIONS=true
-
+    
+before_install:
+  - npm i -g npm
+  
 install:
   - pip install transifex-client
   
